@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  border: 2px solid yellow;
+  background-color: gray;
+  margin-top: 50px;
+  margin-left: 50px;
+  position: relative;
+}
+
+@keyframes move {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 450px;
+  }
+  50% {
+    left: 450px;
+    top: 450px;
+  }
+  75% {
+    top: 450px;
+    left: 450px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.round {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(0, 255, 51);
+  border-radius: 50%;
+  position: absolute;
+  animation: move 3s infinite;
+}
+
+@keyframes hide {
+  0% {
+    color: black;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
+.span {
+  font-size: 48px;
+  animation: hide 500ms infinite;
+}
+
+/*# sourceMappingURL=style.css.map */
